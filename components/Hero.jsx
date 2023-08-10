@@ -5,20 +5,45 @@ import arrow from '@assets/arrow.svg'
 
 const Hero = () => {
   return (
-    <div className="px-24 py-8 sm:flex justify-between items-center hidden">
-      <p className="w-[800px]">
-        <h1 className='sm:block font text-[56px] font-extrabold leading-[72px] mb-12'>
+    <div className="lg:px-24 md:px-16 px-8 py-4 flex lg:flex-row flex-col justify-between items-center">
+      <div className="md:max-w-[800px] w-full">
+        <h1 className='font lg:text-[42px] md:text-[56px] text-[30px] font-extrabold sm:leading-[72px] lg:mb-4 md:mb-4 mb-3'>
           Empowering Industries with Innovative Chemical Solutions
         </h1>
 
-        <Link href='/contact' className="text-[24px] font background-primary py-3 rounded-[32px] flex items-center justify-center w-[240px] text-secondary">
-          Contact Us <Image src={arrow} width={40} className="ml-4" />
+        <Link href='/contact' className='sm:block hidden w-[260px]'>
+          <button className='contactBtn'>
+            <span className="text font text-xl">Contact Us</span>
+            <div className="icon-container">
+              <div className="icon icon--left">
+                  <Image 
+                  src={arrow}
+                  alt='arrow'
+                  />
+              </div>
+
+              <div className="icon icon--right">
+                <Image 
+                  src={arrow}
+                  alt='arrow'
+                  />
+              </div>
+            </div>
+          </button>
         </Link>
-      </p>
+
+        <Link href='/contact' className='flex justify-center w-[200px] items-center sm:hidden text-center background-primary text-secondary rounded-3xl font font-bold py-3'>
+          Contact Us
+          <Image src={arrow} alt='arrow' className='w-12 h-4 ml-1'/>
+            
+        </Link>
+      </div>
+
       <div>
         <Image
          src={heroImg}
-         width={400}
+         alt="Man in suit"
+         className="lg:w-[425px] lg:h-[auto] md:w-[400px] md:h-[380px] lg:mt-0 mt-8 w-[300px] h-[200px]"
         />
       </div>
     </div>

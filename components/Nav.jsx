@@ -28,40 +28,40 @@ const Nav = () => {
     };
   }, []);
 
-
   return (
-    <div className="sm:px-24 sm:py-6 px-6 flex justify-between items-center relative">
+    <div className="lg:px-24 md:px-16 px-8 py-4 flex justify-between items-center relative w-full">
       <Link href='/' className="flex items-center">
         <Image
         src={logo}
         alt="Logo"
-        className="mr-2 sm:w-[90px] w-[50px] h-[50px]" 
+        className="mr-2 sm:w-[90px] w-[50px] h-auto" 
         />
         <span className="text-[1.25rem] font-black font text-primary sm:block hidden">OCHEXAGON</span>
       </Link>
 
-      {/* -------------------DESKTOP---------------- */}
+    {/* -------------------DESKTOP---------------- */}
 
-      <div className="sm:flex font text-lg hidden">
-        <Link href='/' className="mx-3 py-2 px-3">
+      <div className="lg:flex  font text-lg hidden">
+        <Link href='/' className="ml-3 py-2 px-3">
           Home
         </Link>
-        <Link href='/about' className="mx-3 py-2 px-3">
+        <Link href='/about' className="ml-3 py-2 px-3">
           About
         </Link>
-        <Link href='/blog' className="mx-3 py-2 px-3">
+        <Link href='/blog' className="ml-3 py-2 px-3">
           Blog
         </Link>
-        <Link href='contact' className="mx-3 py-2 px-3 border-primary rounded-[24px]">
+        <Link href='contact' className="ml-3 py-2 px-3 border-primary rounded-[24px]">
           Contact us
         </Link>
       </div>
-      <hr className='h-[2px] absolute bottom-0 w-[1330px] hidden sm:block'/>
-
 
       {/* --------------------------------------MOBILE------------------------------------- */}
-      <div className='block sm:hidden'>
-        {/* ----------------MENU---------------- */}
+
+      <div className='block lg:hidden'>
+        
+      {/* ----------------MENU---------------- */}
+
         <div>
           <button className="menu-button" onClick={handleClick} aria-label="Menu Button">
             <div className={`menu-icon-wrapper ${status}`}>

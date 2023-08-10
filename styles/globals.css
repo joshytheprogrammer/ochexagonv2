@@ -7,13 +7,9 @@
 :root {
     --primaryColor: #2C4094;
     --secondaryColor: #ffffff;
+    --accentColor: #a5abda;
 
     --mainfont: 'Poppins', sans-serif;
-}
-
-
-*{
-    
 }
 
 .text-primary{
@@ -30,6 +26,10 @@
 
 .background-secondary{
     background-color: var(--secondaryColor);
+}
+
+.background-accent {
+  background-color: var(--accentColor);
 }
 
 .border-primary{
@@ -105,7 +105,7 @@
     position: absolute;
     z-index: 2;
     left: 100%; /* Start at 0 to slide in from the left */
-    top: 50px;
+    top: 60px;
     
     display: flex;
     flex-direction: column;
@@ -120,4 +120,92 @@
   .mobile--links.active {
     transform: translateX(-50vw); /* Slide the element 220px to the left */
   }
+
+
+
+/* ---------------------Button------------------------ */
+.contactBtn {
+  --width: 240px;
+  --height: 70px;
+  border: 0;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: #fff;
+  font-family: "Montserrat";
+  background: var(--accentColor);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.contactBtn .text,
+.contactBtn .icon-container {
+  position: relative;
+  z-index: 2;
+}
+
+.contactBtn .icon-container {
+  --icon-size: 37px;
+  position: relative;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: 12px;
+  margin-top: 18px;
+  transition: transform 500ms ease;
+}
+
+.contactBtn .icon-container .icon {
+  position: absolute;
+  inset: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform 500ms ease, opacity 250ms ease;
+}
+
+.contactBtn .icon-container .icon--left {
+  transform: translateX(-200%);
+  opacity: 0;
+}
+
+.contactBtn .icon-container .icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+.contactBtn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 110%;
+  height: 100%;
+  background: var(--primaryColor);
+  border-radius: var(--height);
+  z-index: 1;
+  transition: transform 500ms ease;
+}
+
+.contactBtn:hover::after {
+  transform: translateX(65%);
+}
+
+.contactBtn:hover .icon-container {
+  transform: translateX(70%);
+}
+
+.contactBtn:hover .icon-container .icon--left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.contactBtn:hover .icon-container .icon--right {
+  transform: translateX(200%);
+  opacity: 0;
+}
+
   
