@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="lg:px-24 md:px-16 px-8 py-4 flex lg:flex-row flex-col justify-between items-center">
       <div className="md:max-w-[800px] w-full">
-        <h1 className='font lg:text-[42px] md:text-[56px] text-[30px] font-extrabold sm:leading-[72px] lg:mb-4 md:mb-4 mb-3'>
+        <h1 className='font xl:text-[56px] lg:text-[42px] md:text-[56px] text-[30px] font-extrabold sm:leading-[72px] lg:mb-4 md:mb-4 mb-3'>
           Empowering Industries with Innovative Chemical Solutions
         </h1>
 

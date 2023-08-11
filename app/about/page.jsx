@@ -1,8 +1,14 @@
-import React from 'react'
+import Who from '@components/Who'
+import Choose from '@components/Choose'
+import Team from '@components/Team'
 
 const page = () => {
   return (
-    <div>About Page</div>
+    <div>
+      <Who />
+      <Choose />
+      <Team />
+    </div>
   )
 }
 
