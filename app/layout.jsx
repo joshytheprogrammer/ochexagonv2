@@ -6,7 +6,7 @@ import Footer from '@components/Footer'
 
 
 export const metadata = {
-  title: 'Ochexagon - Industrial Chemicals and Solutions',
+  title: 'O.C. Hexagon - Industrial Chemicals and Solutions',
   description: 'Your trusted partner for industrial chemicals, equipment, and laboratory items.',
   siteUrl: 'https://ochexagon.com',
   author: 'Kwaghuter Raphael',
