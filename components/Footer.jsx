@@ -12,12 +12,12 @@ import logo from '@assets/logo.svg'
 const Footer = () => {
   return (
     <div>
-      <div className='flex flex-col sm:flex-row justify-between md:px-16 sm:px-24 sm:py-8 px-8'>
+      <div className='flex flex-col sm:flex-row justify-between md:p-16 sm:px-24 sm:py-8 px-8'>
         <div>
           <Image 
            src={logo}
            alt='logo'
-           className='w-auto mb-6 sm:mb-16'
+           className='w-auto mb-16 sm:mb-24'
           />
 
           <p className='font font-semibold text-xl'>
@@ -26,9 +26,9 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className='flex flex-col justify-between font my-5 sm:my-0'>
-          <h2 className='text-2xl font-semibold'>Contact</h2>
-          <div className='flex items-center text-lg'>
+        <div className='flex flex-col justify-between font my-10 sm:my-0'>
+          <h2 className='text-3xl font-semibold'>Contact</h2>
+          <div className='flex items-center sm:lg text-md my-4 sm:my-0'>
             <Image 
              src={location}
              alt='location'
@@ -39,7 +39,7 @@ const Footer = () => {
               417, Apapa/Oshodi Expressway by Iyana Itire Ilasamaja Lagos.
             </p>              
           </div>
-          <div className='flex text-lg'>
+          <div className='flex sm:text-lg text-md my-4 sm:my-0'>
             <Image 
              src={phone}
              alt='phone'
@@ -50,7 +50,7 @@ const Footer = () => {
             +234-803-0512-882
             </p>              
           </div>
-          <div className='flex text-lg'>
+          <div className='flex sm:text-lg text-md mt-4 sm:mt-0'>
             <Image 
              src={mail}
              alt='mail'
@@ -76,9 +76,10 @@ const Footer = () => {
         </Link>
         </div>
       </div>
-      <div className="background-primary text-secondary flex justify-between md:px-16 sm:px-24 sm:py-8 px-8 py-3 font">
-        <div className='text-sm sm:text-lg'>
-          Copyright &copy; 2023 ochexagon. All rights reserved
+      <div className="background-primary text-secondary flex justify-between md:px-16 sm:px-24 sm:py-8 px-4 py-6 font">
+        <div className='text-sm sm:text-base'>
+          <p className="mb-2 sm:mb-0">Copyright &copy; 2023 ochexagon. All rights reserved </p>
+          <p>this website was built by raphaelKwaghuter and joshytheprogrammer</p>
         </div>
         <div className="hidden sm:flex">
           <Image 

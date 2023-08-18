@@ -12,6 +12,7 @@
     --mainfont: 'Poppins', sans-serif;
 }
 
+
 .text-primary{
     color: var(--primaryColor);
 }
@@ -104,7 +105,7 @@
   .mobile--links {
     position: absolute;
     z-index: 2;
-    left: 100%; /* Start at 0 to slide in from the left */
+    left: 100%;
     top: 60px;
     
     display: flex;
@@ -112,13 +113,14 @@
     align-items: center;
     width: 50vw;
     padding: 1rem;
-    background-color: rgb(142, 159, 174);
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
     
-    transition: transform 330ms ease-out; /* Transition the transform property */
+    transition: transform 330ms ease-out;
   }
   
   .mobile--links.active {
-    transform: translateX(-50vw); /* Slide the element 220px to the left */
+    transform: translateX(-50vw);
   }
 
 
@@ -140,7 +142,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
 }
 
 .contactBtn .text,
@@ -206,4 +207,36 @@
 .contactBtn:hover .icon-container .icon--right {
   transform: translateX(200%);
   opacity: 0;
+}
+
+
+
+/* -------------------------------Swiper-------------------------- */
+
+.swiper {
+  width: auto;
+  height: 100%;
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+@media screen and (max-width: 767px) {
+  .contactBtn {
+    --width: 200px;
+    --height: 45px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .swiper {
+    max-width: 100%;
+  }
 }
