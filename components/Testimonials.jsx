@@ -38,7 +38,7 @@ const Testimonials = ({ testimonials }) => {
 
             {[testimonials.map((testimony) => (
               <SwiperSlide className='py-3 lg:p-8 '>
-                <div className='lg:p-8 lg:border-2 mb-8 lg:mb-4 drop-shadow-2xl rounded-2xl w-auto relative'>
+                <div className='lg:p-8 lg:border-2 mb-8 lg:mb-4 drop-shadow-2xl rounded-2xl w-auto relative text-center lg:text-left'>
                 <Image 
                   src={testimony.src}
                   alt={testimony.id}

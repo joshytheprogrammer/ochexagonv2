@@ -17,7 +17,7 @@ const Choose = () => {
           </h2>
 
           <p className="font text-base lg:text-sm xl:text-lg text-center">
-            With decades of experience, our seasoned professionals provide unmatched chemical insights, delivering solutions that conquer diverse challenges.
+            Experienced professionals offer unparalleled, in-depth chemical insights, skillfully conquering various complex challenges.
           </p>
         </div>
 

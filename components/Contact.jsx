@@ -59,7 +59,7 @@ const schema = yup.object({
 
         <div className="flex flex-col mb-4">
           <label className="font font-bold text-xl mb-2">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10" className="border-2 w-full h-[120px] p-3 rounded-xl font focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300"></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" className="border-2 w-full h-[180px] p-3 rounded-xl font focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300"></textarea>
         </div>
 
         <input type="submit" className="block font text-xl w-full text-center p-3 background-primary cursor-pointer text-secondary rounded-xl"/>
