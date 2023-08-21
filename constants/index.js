@@ -2,6 +2,7 @@ import testimonial1  from '@assets/testimonial1.png'
 import testimonial2  from '@assets/testimonial2.png'
 import testimonial3  from '@assets/testimonial3.png'
 
+
 export const homeTestimonials = [
     {
         id: "one",
@@ -48,5 +49,32 @@ export const aboutTestimonial = [
         name: "Igwe DC",
         location: "Founder/CEO",
         testimony: "When it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heights",
+    },
+]
+
+export const blogPostCard = [
+    {
+        id: "one",
+        title: "Blog Post Title",
+        author: "Raphael Kwaghuter",
+        time: "16 min read"
+    },
+    {
+        id: "two",
+        title: "Blog Post Title",
+        author: "Joshua Nsofor",
+        time: "12 min read"
+    },
+    {
+        id: "three",
+        title: "Blog Post Title",
+        author: "Osama",
+        time: "24 min read"
+    },
+    {
+        id: "one",
+        title: "Blog Post Title",
+        author: "Codayomide",
+        time: "16 min read"
     },
 ]

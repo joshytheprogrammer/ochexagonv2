@@ -3,7 +3,7 @@ import blog1 from "@assets/blog1.jpg"
 
 const BlogPostCard = () => {
   return (
-    <div className="mx-3 my-5 w-[300px] sm:w-[400px] border border-black rounded-xl">
+    <div className="w-full md:w-[49%] lg:w-[32%] mb-12 border border-black rounded-xl">
         <Image 
          src={blog1}
          alt="Image"

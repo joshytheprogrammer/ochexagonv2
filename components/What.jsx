@@ -8,7 +8,7 @@ const What = () => {
     <div className="lg:p-24 md:px-16 px-8 py-12">
       <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-20 mb-6">What We Do</h1>
       
-      <div className="flex flex-wrap justify-between md:flex-row items-center ">
+      <div className="flex flex-wrap justify-between md:flex-row items-center">
         <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl py-8 px-3 mb-8 flex flex-col items-center background-accent">
           <div className="background-primary flex items-center justify-center px-3 py-3 rounded-[24px] w-[100px] lg:w-[85px] xl:w-[100px]">
             <Image 
