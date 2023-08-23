@@ -1,14 +1,14 @@
 import Image from 'next/image'
-import chemicals from '@assets/chemicals.webp'
+import chemicals from '@assets/chemicals.png'
 
 const Who = () => {
   return (
-    <div className='lg:px-24 lg:pt-20 md:px-16  px-8 py-4 flex flex-col lg:flex-row justify-between items-center '>
-        <div className='w-full lg:w-2/4 mb-8 lg:mb-0 mr-8'>
+    <div className='lg:px-20 lg:pt-32 md:px-16 px-8 py-4 flex flex-col lg:flex-row justify-between items-center '>
+        <div className='w-full lg:w-2/4 mb-8 lg:mb-0 lg:mr-8'>
             <Image 
             src={chemicals}
             alt='chemicals'
-            className='w-full'
+            className='w-full sm:h-[400px]'
             />
         </div>
 

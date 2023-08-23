@@ -62,6 +62,9 @@ const Footer = () => {
           </div>
         </div>
         <div className='lg:flex flex-col hidden justify-between font text-xl'>
+
+        <h2 className='text-3xl font-semibold'>Quick Links</h2>
+
           <Link href='/' className="">
             Home
           </Link>

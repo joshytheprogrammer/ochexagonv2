@@ -5,9 +5,9 @@ import arrow from '@assets/arrow.svg'
 
 const Hero = () => {
   return (
-    <div className="lg:px-24 md:px-16 px-8 py-8 flex flex-row justify-between items-center">
+    <div className="lg:px-24 md:px-16 px-8 py-16 flex flex-row justify-between items-center">
       <div className="md:max-w-[800px] w-full flex flex-col">
-        <h1 className='font xl:text-[56px] lg:text-[42px] md:text-[56px] text-[32px] text-center lg:text-left font-extrabold sm:leading-[72px] md:mb-12  mb-3'>
+        <h1 className='font xl:text-[56px] lg:text-[42px] md:text-[56px] text-[36px] text-center lg:text-left font-extrabold sm:leading-[72px] mb-12'>
           Empowering Industries with Innovative Chemical Solutions
         </h1>
 

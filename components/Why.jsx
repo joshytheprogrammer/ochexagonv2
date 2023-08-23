@@ -8,7 +8,7 @@ import whatImg from '@assets/whatImg.png'
 const Why = () => {
   return (
     <div className="flex flex-col items-center xl:py-16 lg:px-16 md:px-20 md:py-20 px-8 py-12">
-      <h1 className="font sm:text-[56px] text-4xl text-center font-semibold lg:mb-28 md:mb-12 mb-8">Why People Choose Us</h1>
+      <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-20 mb-6">Why People Choose Us</h1>
 
       <div className="relative lg:w-[965px]">
         <div className="flex items-center mb-10">

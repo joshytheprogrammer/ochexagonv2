@@ -25,7 +25,7 @@ const Testimonials = ({ testimonials }) => {
             centeredSlides={true}
             loop={true}
             autoplay={{
-              delay: 2500,
+              delay: 4000,
               disableOnInteraction: false,
             }}
             pagination={{

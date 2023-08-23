@@ -9,9 +9,9 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Clients = ({testimonials}) => {
   return (
-    <div className="lg:px-24 md:px-16 px-8 py-12">
+    <div className="lg:px-20 lg:py-20 md:px-16 px-8 py-12">
 
-        <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-12 mb-6">Our Clients Say</h1>
+        <h1 className="font text-4xl md:text-[56px] font-semibold text-center lg:mb-12 md:mb-12 mb-6">Our Clients Say</h1>
 
 
         <Swiper
@@ -30,8 +30,8 @@ const Clients = ({testimonials}) => {
         >
 
           {[testimonials.map((testimony) => (
-            <SwiperSlide className='py-3 lg:p-8'>
-              <div className='lg:p-8 lg:border-2 mb-8 lg:mb-4 drop-shadow-2xl rounded-2xl w-auto relative'>
+            <SwiperSlide className='py-3 lg:px-8 lg:pt-6'>
+              <div className='lg:pt-6 lg:pb-4 lg:px-5 mb-8 lg:mb-0 drop-shadow-2xl rounded-2xl w-auto relative'>
             
               <p className='sm:text-2xl font'>
               {testimony.testimony}

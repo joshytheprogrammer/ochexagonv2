@@ -12,6 +12,10 @@
     --mainfont: 'Poppins', sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 
 .text-primary{
     color: var(--primaryColor);
@@ -106,8 +110,8 @@
     position: absolute;
     z-index: 2;
     left: 100%;
-    top: 60px;
-    
+    top: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
