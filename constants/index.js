@@ -1,6 +1,7 @@
 import testimonial1  from '@assets/testimonial1.png'
 import testimonial2  from '@assets/testimonial2.png'
 import testimonial3  from '@assets/testimonial3.png'
+import flask from '@assets/flask.svg'
 
 
 export const homeTestimonials = [
@@ -80,5 +81,69 @@ export const blogPostCard = [
         author: "Codayomide",
         time: "16 min read",
         content: "When it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heightsWhen it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heightsWhen it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heightsWhen it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heightsWhen it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heightsWhen it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heightsWhen it comes to quality, precision, and professionalism, this chemical company sets the gold standard. We have consistently relied on their products and services to maintain our operations at peak performance. Their team's dedication and forward-thinking approach have proven invaluable in elevating our business to new heights"
+    },
+]
+
+
+export const chemicalRange = [
+    {
+        id: "one",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "two",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "three",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "four",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "five",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "six",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "seven",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "eight",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "nine",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "ten",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "eleven",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
+    },
+    {
+        id: "twelve",
+        icon: flask,
+        productname: "Tetraoxoshulphate(VI)",
     },
 ]

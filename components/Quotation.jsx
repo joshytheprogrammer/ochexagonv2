@@ -66,7 +66,7 @@ const Quotation = () => {
         <Input 
         id="Username"
         label="Product Number"
-        type="text"
+        type="number"
         register={{ ...register("ProductNumber") }}
         errorMessage={errors.ProductNumber?.message}
         />

@@ -112,7 +112,7 @@ html {
     left: 100%;
     top: 100%;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 50vw;
@@ -125,6 +125,7 @@ html {
   
   .mobile--links.active {
     transform: translateX(-50vw);
+    display: flex;
   }
 
 
