@@ -1,61 +1,48 @@
-import Image from 'next/image'
-import flask from '@assets/flask.svg'
-import bulb from '@assets/bulb.svg'
-import drop from '@assets/drop.svg'
+
 
 const Choose = () => {
   return (
-    <div className="lg:px-24 md:px-16 px-8 py-12">
-      <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-12 mb-6">Why Choose Us?</h1>
+    <div className="lg:px-20 lg:py-24 md:px-16 px-8 py-12">
+      <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-12 mb-6">Why Choose Us</h1>
 
-      <div className="flex flex-col md:flex-row items-center lg:justify-between">
-        <div className="flex flex-col justify-center items-center mx-3 my-4 max-w-[400px] py-8 px-4 rounded-2xl background-accent">
-          <div className="background-primary flex items-center justify-center p-6 rounded-[24px] w-[100px] lg:w-[85px] xl:w-[100px]">
-            <Image 
-            src={flask}
-            alt="flask" 
-            />
-          </div>
+      <div className="flex justify-center">
+        <p className="font text-xl text-center  mb-12 w-full lg:w-[600px]">
+          Uncover the <span className="font-bold text-primary">OCHEXAGON</span> difference. Experience excellence, innovation, and sustainability at its best.
+        </p>
+      
+      </div>
 
-          <h2 className="font font-semibold text-xl md:text-2xl lg:text-2xl xl:text-3xl text-center my-3 xl:my-6">
-            Clemical Solutions
+      <div className="flex flex-wrap justify-between md:flex-row items-center ">
+        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 mb-8 flex flex-col items-center background-accent">
+          
+          <h2 className="font font-semibold text-xl md:text-2xl lg:text-3xl text-center my-3 xl:my-6">
+            Unparalleled Expertise
           </h2>
 
-          <p className="font md:px-3 lg:font-xl xl:text-xl text-center">
-            Supply a diverse range of industrial chemicals various needs
+          <p className="font text-base lg:text-sm xl:text-lg text-center">
+            Experienced professionals offer unparalleled, in-depth chemical insights, skillfully conquering various intricate complex challenges.
           </p>
         </div>
 
-        <div className="flex flex-col justify-center items-center mx-3 my-4 max-w-[400px] py-8 px-4 rounded-2xl background-accent">
-          <div className="background-primary flex items-center justify-center p-6 rounded-[24px] w-[100px] lg:w-[85px] xl:w-[100px]">
-            <Image 
-            src={bulb}
-            alt="flask" 
-            />
-          </div>
+        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 mb-8 flex flex-col items-center background-accent">
 
-          <h2 className="font font-semibold text-xl md:text-2xl lg:text-2xl xl:text-3xl text-center my-3 xl:my-6">
-            Innovative Services
+          <h2 className="font font-semibold text-xl md:text-2xl lg:text-3xl text-center my-3 xl:my-6">
+            Tailored Innovations
           </h2>
 
-          <p className="font md:px-3 lg:font-xl xl:text-xl text-center">
-           Delivering innovative solutions, repackaging & efficient delivery
+          <p className="font text-base lg:text-sm xl:text-lg text-center">
+            We specialize in customized chemical innovations, ensuring outcomes that go beyond expectations for every client's unique needs.
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center mx-3 my-4 max-w-[400px] py-8 px-4 rounded-2xl background-accent">
-          <div className="background-primary flex items-center justify-center p-6 rounded-[24px] w-[100px] lg:w-[85px] xl:w-[100px]">
-            <Image 
-            src={drop}
-            alt="flask" 
-            />
-          </div>
 
-          <h2 className="font font-semibold text-xl md:text-2xl lg:text-2xl xl:text-3xl text-center my-3 xl:my-6">
-            Environmental Care
+        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 mb-8 flex flex-col items-center background-accent">
+
+          <h2 className="font font-semibold text-xl md:text-2xl lg:text-3xl text-center my-3 xl:my-6">
+            Sustainability Leaders
           </h2>
 
-          <p className="font md:px-3 lg:font-xl xl:text-xl text-center">
-           Contributing to sustainability with oil spill cleanup solutions
+          <p className="font text-base lg:text-sm  xl:text-lg text-center">
+            Beyond uncompromising quality, we're committed to eco-friendly practices, making us your partner for responsible and effective chemical solutions.
           </p>
         </div>
       </div>
