@@ -3,7 +3,6 @@ import testimonial2  from '@assets/testimonial2.png'
 import testimonial3  from '@assets/testimonial3.png'
 import flask from '@assets/flask.svg'
 
-
 export const homeTestimonials = [
     {
         id: "one",
