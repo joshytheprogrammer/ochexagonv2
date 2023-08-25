@@ -1,4 +1,4 @@
-import Contact from '@components/contact'
+import Contact from '@components/Contact'
 import Map from '@components/Map'
 import Jumbotron from '@components/Jumbotron'
 
