@@ -30,15 +30,22 @@ const schema = yup.object({
       }
 
   return (
-    <div className="lg:px-24 md:px-16 px-8 py-4 flex lg:flex-row  justify-between flex-col">
+    <div className="lg:px-24 lg:py-12 md:px-16 px-8 py-4 flex lg:flex-row  justify-between flex-col">
       <div className="lg:w-2/5 w-full mr-12 mb-12">
-        <h1 className="font font-bold xl:text-[56px] lg:text-[42px] md:text-[56px] text-[30px]">Contact Us</h1>
         <p className="font text-lg">
           If you have any questions or comments, please contact us via email, or send us a message using the contact form.
         </p>
 
-        <h2 className="font text-2xl font-bold mt-8">Email</h2>
-        <span className="font text-lg">info@ochexagon.com</span>
+        <div>
+          <h2 className="font text-2xl font-bold mt-8">Email</h2>
+          <span className="font text-lg">info@ochexagon.com</span>
+        </div>
+
+        <div>
+          <h2 className="font text-2xl font-bold mt-4">Phone No</h2>
+          <span className="font text-lg">+234-803-0512-882</span>
+        </div>
+        
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="lg:w-3/5 w-full">
@@ -59,7 +66,7 @@ const schema = yup.object({
 
         <div className="flex flex-col mb-4">
           <label className="font font-bold text-xl mb-2">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10" className="border-2 w-full p-3 rounded-xl font focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300"></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" className="border-2 w-full h-[180px] p-3 rounded-xl font focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300"></textarea>
         </div>
 
         <input type="submit" className="block font text-xl w-full text-center p-3 background-primary cursor-pointer text-secondary rounded-xl"/>

@@ -29,7 +29,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="lg:px-24 md:px-16 px-8 py-8 flex justify-between items-center relative w-full">
+    <div className="lg:px-24 md:px-16 px-8 md:py-8 py-4 flex justify-between items-center relative">
       <Link href='/' className="flex items-center">
         <Image
         src={logo}
@@ -39,29 +39,26 @@ const Nav = () => {
         <span className="text-[1.25rem] font-black font text-primary sm:block hidden">OCHEXAGON</span>
       </Link>
 
-    {/* -------------------DESKTOP---------------- */}
+    {/* -----------------------Desktop Links---------------------------- */}
 
-      <div className="lg:flex  font text-lg hidden">
-        <Link href='/' className="ml-3 py-2 px-3">
+      <div className="lg:flex items-center  font text-lg hidden">
+        <Link href='/' className="py-1 px-3 relative hover:border-blue-800 hover:border-b-[2.5px] hover:text-blue-900  transition duration-500">
           Home
         </Link>
-        <Link href='/about' className="ml-3 py-2 px-3">
+        <Link href='/about' className="ml-6 py-1 px-3 relative hover:border-blue-800 hover:border-b-[2.5px] hover:text-blue-900 transition duration-500">
           About
         </Link>
-        <Link href='/blog' className="ml-3 py-2 px-3">
+        <Link href='/blog' className="ml-6 py-1 px-3 relative hover:border-blue-800 hover:border-b-[2.5px] hover:text-blue-900 transition duration-500">
           Blog
         </Link>
-        <Link href='contact' className="ml-3 py-2 px-3 border-primary rounded-[24px]">
+        <Link href='contact' className="ml-6 py-2 px-5 border-primary rounded-[24px] hover:text-white hover:bg-blue-900 transition duration-500">
           Contact us
         </Link>
       </div>
 
-      {/* --------------------------------------MOBILE------------------------------------- */}
+    {/* -------------------------------Mobile Links--------------------------- */}
 
-      <div className='block lg:hidden'>
-        
-      {/* ----------------MENU---------------- */}
-
+      <div className='block lg:hidden font'>
         <div>
           <button className="menu-button" onClick={handleClick} aria-label="Menu Button">
             <div className={`menu-icon-wrapper ${status}`}>
@@ -73,19 +70,20 @@ const Nav = () => {
         </div>
 
         <div className={`mobile--links ${status}`}>
-          <Link href='/' className="py-3 my-1">
+          <Link href='/' className="py-3 my-1 w-full text-center">
             Home
           </Link>
-          <Link href='/about' className="py-3 my-1">
+          <Link href='/about' className="py-3 my-1 w-full text-center">
             About
           </Link>
-          <Link href='/blog' className="py-3 my-1">
+          <Link href='/blog' className="py-3 my-1 w-full text-center">
             Blog
           </Link>
-          <Link href='contact' className="py-3 my-1">
+          <Link href='contact' className="py-3 my-1 w-full text-center">
             Contact us
           </Link>
         </div>
+
       </div>
 
     </div>
