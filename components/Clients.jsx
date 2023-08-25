@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Clients = ({testimonials}) => {
   return (
-    <div className="lg:px-20 lg:py-20 md:px-16 px-8 py-12">
+    <div className="lg:px-20 lg:py-20 md:px-16 px-8 pt-12">
 
         <h1 className="font text-4xl md:text-[56px] font-semibold text-center lg:mb-12 md:mb-12 mb-6">Our Clients Say</h1>
 

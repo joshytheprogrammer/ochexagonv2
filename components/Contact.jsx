@@ -30,8 +30,8 @@ const schema = yup.object({
       }
 
   return (
-    <div className="lg:px-24 lg:py-12 md:px-16 px-8 py-4 flex lg:flex-row  justify-between flex-col">
-      <div className="lg:w-2/5 w-full mr-12 mb-12">
+    <div className="lg:px-24 lg:pt-20 md:px-16 md px-8 py-12 flex lg:flex-row  justify-between flex-col">
+      <div className="lg:w-2/5 w-full mr-12 mb-20">
         <p className="font text-lg">
           If you have any questions or comments, please contact us via email, or send us a message using the contact form.
         </p>
