@@ -12,12 +12,12 @@ import logo from '@assets/logo.svg'
 const Footer = () => {
   return (
     <div>
-      <div className='flex flex-col sm:flex-row justify-between md:p-16 sm:px-24 sm:py-8 px-8'>
+      <div className='flex flex-col sm:flex-row justify-between lg:px-24 md:px-16 md:py-16 sm:px-24 sm:py-8 px-8 py-12'>
         <div>
           <Image 
            src={logo}
            alt='logo'
-           className='w-auto mb-16 sm:mb-24'
+           className='w-auto mb-16 sm:mb-28'
           />
 
           <p className='font font-semibold text-xl'>
@@ -26,16 +26,16 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className='flex flex-col justify-between font my-10 sm:my-0'>
-          <h2 className='text-3xl font-semibold'>Contact</h2>
-          <div className='flex items-center sm:lg text-md my-4 sm:my-0'>
+        <div className='flex flex-col justify-between font mt-8 sm:my-0'>
+          <h2 className='text-3xl font-semibold mb-4'>Contact</h2>
+          <div className='flex items-center sm:lg text-md my-6 sm:my-0'>
             <Image 
              src={location}
              alt='location'
              className='w-6 mr-4 h-auto'
             />
 
-            <p className='font w-[300px]'>
+            <p className='font max-w-[300px]'>
               417, Apapa/Oshodi Expressway by Iyana Itire Ilasamaja Lagos.
             </p>              
           </div>
@@ -65,24 +65,24 @@ const Footer = () => {
 
         <h2 className='text-3xl font-semibold'>Quick Links</h2>
 
-          <Link href='/' className="">
+          <Link href='/' className="hover:text-blue-800">
             Home
           </Link>
-          <Link href='/about' className="">
+          <Link href='/about' className="hover:text-blue-800">
             About
           </Link>
-          <Link href='/blog' className="">
+          <Link href='/blog' className="hover:text-blue-800">
             Blog
           </Link>
-          <Link href='contact' className="">
+          <Link href='contact' className="hover:text-blue-800">
           Contact us
         </Link>
         </div>
       </div>
       <div className="background-primary text-secondary flex justify-between md:px-16 sm:px-24 sm:py-8 px-4 py-6 font">
         <div className='text-sm sm:text-base'>
-          <p className="mb-2 sm:mb-0">Copyright &copy; 2023 ochexagon. All rights reserved </p>
-          <p>this website was built by raphaelKwaghuter and joshytheprogrammer</p>
+          <p className="mb-3 sm:mb-0">Copyright &copy; 2023 <span className='font-semibold'>ochexagon</span>. All rights reserved </p>
+          <p>this website was built by <Link href="https://github.com/RalphFred" target="_blank" className="font-bold cursor-pointer">raphaelKwaghuter</Link> and <Link href="https://joshytheprogrammer.com/" target="_blank" className="font-bold cursor-pointer">joshytheprogrammer</Link></p>
         </div>
         <div className="hidden sm:flex">
           <Image 

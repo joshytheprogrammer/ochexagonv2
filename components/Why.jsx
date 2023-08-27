@@ -8,9 +8,9 @@ import whatImg from '@assets/whatImg.png'
 const Why = () => {
   return (
     <div className="flex flex-col items-center xl:py-16 lg:px-16 md:px-20 md:py-20 px-8 py-12">
-      <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-20 mb-6">Why People Choose Us</h1>
+      <h1 className="font text-4xl md:text-[52px] font-semibold text-center md:mb-20 mb-12">Why People Choose Us</h1>
 
-      <div className="relative lg:w-[965px]">
+      <div className="relative xl:w-[965px]">
         <div className="flex items-center mb-10">
           <Image 
            alt="one"
@@ -66,7 +66,7 @@ const Why = () => {
           <Image 
            src={whatImg}
            alt='whatImg'
-           className="w-[600px] absolute -top-[30px] left-[360px] hidden lg:block"
+           className="w-[600px] absolute -top-[30px] left-[360px] hidden xl:block"
           /> 
       </div>
 
