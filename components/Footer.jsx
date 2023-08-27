@@ -20,14 +20,14 @@ const Footer = () => {
            className='w-auto mb-16 sm:mb-28'
           />
 
-          <p className='font font-semibold text-xl'>
+          <p className='font font-medium text-xl'>
             Elevating Industries, <br />
             Empowering Solutions.
           </p>
         </div>
 
         <div className='flex flex-col justify-between font mt-8 sm:my-0'>
-          <h2 className='text-3xl font-semibold mb-4'>Contact</h2>
+          <h2 className='text-3xl font-medium mb-4'>Contact</h2>
           <div className='flex items-center sm:lg text-md my-6 sm:my-0'>
             <Image 
              src={location}
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div className='lg:flex flex-col hidden justify-between font text-xl'>
 
-        <h2 className='text-3xl font-semibold'>Quick Links</h2>
+        <h2 className='text-3xl font-medium '>Quick Links</h2>
 
           <Link href='/' className="hover:text-blue-800">
             Home
@@ -81,8 +81,8 @@ const Footer = () => {
       </div>
       <div className="background-primary text-secondary flex justify-between md:px-16 sm:px-24 sm:py-8 px-4 py-6 font">
         <div className='text-sm sm:text-base'>
-          <p className="mb-3 sm:mb-0">Copyright &copy; 2023 <span className='font-semibold'>ochexagon</span>. All rights reserved </p>
-          <p>this website was built by <Link href="https://github.com/RalphFred" target="_blank" className="font-bold cursor-pointer">raphaelKwaghuter</Link> and <Link href="https://joshytheprogrammer.com/" target="_blank" className="font-bold cursor-pointer">joshytheprogrammer</Link></p>
+          <p className="mb-3 sm:mb-0">Copyright &copy; 2023 <span className='font-medium '>ochexagon</span>. All rights reserved </p>
+          <p>this website was built by <Link href="https://github.com/RalphFred" target="_blank" className="font-semibold  cursor-pointer">raphaelKwaghuter</Link> and <Link href="https://joshytheprogrammer.com/" target="_blank" className="font-semibold cursor-pointer">joshytheprogrammer</Link></p>
         </div>
         <div className="hidden sm:flex">
           <Image 
