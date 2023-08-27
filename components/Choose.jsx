@@ -2,7 +2,7 @@
 
 const Choose = () => {
   return (
-    <div className="lg:px-20 lg:py-24 md:px-16 px-8 py-12">
+    <div className="lg:px-20 lg:py-24 md:px-16 px-8 pt-12">
       <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-12 mb-6">Why Choose Us</h1>
 
       <div className="flex justify-center">
@@ -13,18 +13,18 @@ const Choose = () => {
       </div>
 
       <div className="flex flex-wrap justify-between md:flex-row items-center ">
-        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 mb-8 flex flex-col items-center background-accent">
+        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 lg:mb-0 mb-16 flex flex-col items-center background-accent">
           
           <h2 className="font font-semibold text-xl md:text-2xl lg:text-3xl text-center my-3 xl:my-6">
             Unparalleled Expertise
           </h2>
 
           <p className="font text-base lg:text-sm xl:text-lg text-center">
-            Experienced professionals offer unparalleled, in-depth chemical insights, skillfully conquering various intricate complex challenges.
+          Experienced professionals offer unparalleled, in-depth chemical insights, skillfully and confidently conquering various intricate complex challenges
           </p>
         </div>
 
-        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 mb-8 flex flex-col items-center background-accent">
+        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 lg:mb-0 mb-16 flex flex-col items-center background-accent">
 
           <h2 className="font font-semibold text-xl md:text-2xl lg:text-3xl text-center my-3 xl:my-6">
             Tailored Innovations
@@ -35,7 +35,7 @@ const Choose = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 mb-8 flex flex-col items-center background-accent">
+        <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 lg:mb-0 mb-8 flex flex-col items-center background-accent">
 
           <h2 className="font font-semibold text-xl md:text-2xl lg:text-3xl text-center my-3 xl:my-6">
             Sustainability Leaders
