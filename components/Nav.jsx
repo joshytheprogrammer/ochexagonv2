@@ -31,7 +31,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="lg:px-24 md:px-16 px-8 md:py-8 py-4 flex justify-between items-center relative ">
+    <div className="lg:px-24 md:px-16 px-8 md:py-8 py-8 flex justify-between items-center relative ">
       <Link href='/' className="flex items-center">
         <Image
         src={logo}

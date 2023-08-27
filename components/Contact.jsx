@@ -37,12 +37,12 @@ const schema = yup.object({
         </p>
 
         <div>
-          <h2 className="font text-2xl font-bold mt-8">Email</h2>
+          <h2 className="font text-2xl font-medium pt-8">Email</h2>
           <span className="font text-lg">info@ochexagon.com</span>
         </div>
 
         <div>
-          <h2 className="font text-2xl font-bold mt-4">Phone No</h2>
+          <h2 className="font text-2xl font-medium pt-8">Phone No</h2>
           <span className="font text-lg">+234-803-0512-882</span>
         </div>
         
@@ -65,7 +65,7 @@ const schema = yup.object({
         />
 
         <div className="flex flex-col mb-4">
-          <label className="font font-bold text-xl mb-2">Message</label>
+          <label className="font text-xl mb-2">Message</label>
           <textarea name="message" id="message" cols="30" rows="10" className="border-2 w-full h-[180px] p-3 rounded-xl font focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300"></textarea>
         </div>
 
