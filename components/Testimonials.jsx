@@ -11,16 +11,16 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Testimonials = ({ testimonials }) => {
 
   return (    
-       <div className='sm:px-24 lg:py-24 py-12 px-8 font flex flex-col lg:flex-row justify-between'>
+       <div className='lg:px-24 lg:py-24 py-12 px-8 font flex flex-col xl:flex-row justify-between'>
        <div className='flex flex-col justify-center'>
-          <p className='font-semibold text-lg mb-8 lg:block hidden'>TESTIMONIALS</p>
+          <p className='font-semibold text-lg mb-8 xl:block hidden'>TESTIMONIALS</p>
 
-          <h1 className='text-4xl text-center lg:text-left md:text-6xl sm:max-w-[600px] mb-12 font-bold'>
+          <h1 className='text-4xl text-center xl:text-left md:text-6xl xl:max-w-[600px] mb-12 font-bold'>
             What People Say About Us.
           </h1>
       </div>
 
-      <div className="max-w-[600px]">
+      <div className="xl:max-w-[600px]">
         <Swiper
             centeredSlides={true}
             loop={true}
@@ -38,14 +38,14 @@ const Testimonials = ({ testimonials }) => {
 
             {[testimonials.map((testimony) => (
               <SwiperSlide className='py-3 lg:p-8 '>
-                <div className='lg:p-8 lg:border-2 mb-8 lg:mb-4 drop-shadow-2xl rounded-2xl w-auto relative text-center lg:text-left'>
+                <div className='xl:p-8 xl:border-2 mb-8 lg:mb-4 drop-shadow-2xl rounded-2xl w-auto relative text-center xl:text-left'>
                 <Image 
                   src={testimony.src}
                   alt={testimony.id}
-                  className="absolute -top-[24px] -left-[30px] border-2 rounded-full hidden lg:block"
+                  className="absolute -top-[24px] -left-[30px] border-2 rounded-full hidden xl:block"
                 />
 
-                <p className='sm:text-lg'>
+                <p className='lg:text-lg '>
                   {testimony.testimony}
                 </p>
 
