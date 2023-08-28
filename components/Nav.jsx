@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logo from '@assets/logo.svg'
 import { useState, useEffect } from 'react';
 
+
 const Nav = () => {
   const pathname = usePathname();
 
