@@ -7,7 +7,7 @@ import Link from "next/link"
 const page = () => {
   return (
     <div className="">
-      <Jumbotron content="Blog" url="https://img.freepik.com/free-photo/close-up-hand-taking-notes_23-2148888827.jpg?w=1380&t=st=1692630965~exp=1692631565~hmac=2e99735c7bd5728383e339f23904efd786f2866c5dc80af48c42e41be68f9437"/>
+      <Jumbotron content="Blog" url="https://res.cloudinary.com/dsgvwxygr/image/upload/v1693116985/ochexagon/photo_1_2023-08-27_07-07-22_o5zhe4.jpg"/>
 
       <div className="flex justify-between flex-wrap lg:p-24 md:px-16 md:pt-20 md:pb-0 px-8 py-12">
         {[blogPostCard.map((post) => (

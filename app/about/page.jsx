@@ -9,7 +9,7 @@ import { aboutTestimonial } from '@constants'
 const page = () => {
   return (
     <div>
-      <Jumbotron content="About Us" url="https://res.cloudinary.com/dsgvwxygr/image/upload/v1693116985/ochexagon/photo_3_2023-08-27_07-07-22_ha12lj.jpg"/>
+      <Jumbotron content="About Us" url="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2FyZWhvdXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"/>
 
       <Who />
       <Choose />
