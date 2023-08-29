@@ -7,7 +7,7 @@ const page = () => {
 
   return (
     <div>
-      <Jumbotron content="Contact Us" url="https://jgu.edu.in/wp-content/uploads/2021/06/contact_banner_short.jpg"/>
+      <Jumbotron content="Contact Us" url="https://res.cloudinary.com/dsgvwxygr/image/upload/v1693116984/ochexagon/photo_2_2023-08-27_07-07-22_daeby4.jpg"/>
       <Contact />
       <Map/>
     </div>
