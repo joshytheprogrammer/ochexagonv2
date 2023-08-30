@@ -12,7 +12,7 @@ const Product = () => {
               <Image 
                src={product.icon}
                alt="prodcut icon"
-               className="w-[60px]"
+               className="w-[100px] h-[40px]"
               />
               <p className="font font-semibold mt-4 text-sm px-6">
                 {product.productname}

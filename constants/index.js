@@ -3,6 +3,14 @@ import testimonial2  from '@assets/testimonial2.png'
 import testimonial3  from '@assets/testimonial3.png'
 import flask from '@assets/flask.svg'
 
+import aluminiumSulphate from '@assets/aluminiumSulphate.svg';
+import ferricChloride from '@assets/ferricChloride.svg';
+import causticSoda from '@assets/causticSoda.svg';
+import sodaAsh from '@assets/sodaAsh.svg';
+import sodiumHypochlorite from '@assets/sodiumHypochlorite.svg';
+
+
+
 export const homeTestimonials = [
     {
         id: "one",
@@ -87,62 +95,28 @@ export const blogPostCard = [
 export const chemicalRange = [
     {
         id: "one",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
+        icon: aluminiumSulphate,
+        productname: "Alum (Aluminum Sulfate)",
     },
     {
         id: "two",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
+        icon: ferricChloride,
+        productname: "Ferric Chloride",
     },
     {
         id: "three",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
+        icon: sodiumHypochlorite,
+        productname: "Sodium Hypochlorite",
     },
     {
         id: "four",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
-    },
-    {
-        id: "five",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
-    },
-    {
-        id: "six",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
+        icon: sodaAsh,
+        productname: "Sodium Carbonate (Soda Ash)",
     },
     {
         id: "seven",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
+        icon: causticSoda,
+        productname: "Caustic Soda (Sodium Hydroxide)",
     },
-    {
-        id: "eight",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
-    },
-    {
-        id: "nine",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
-    },
-    {
-        id: "ten",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
-    },
-    {
-        id: "eleven",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
-    },
-    {
-        id: "twelve",
-        icon: flask,
-        productname: "Tetraoxoshulphate(VI)",
-    },
+   
 ]
