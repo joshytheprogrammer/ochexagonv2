@@ -33,7 +33,7 @@ const page = () => {
                 </p>
 
                 <Link href={`/blog/posts/${post.id}`}>
-                  <button className="bg-black text-white my-2 py-2 px-5 mt-2  rounded-lg font text-base">
+                  <button className="background-primary text-white my-2 py-2 px-5 mt-2  rounded-lg font text-base">
                     Read
                   </button>
                 </Link>
