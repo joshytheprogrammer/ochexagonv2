@@ -2,7 +2,7 @@ import Jumbotron from '@components/Jumbotron'
 import Who from '@components/Who'
 import Choose from '@components/Choose'
 import Team from '@components/Team'
-import Clients from '@components/Clients'
+import TeamTestimonials from '@components/TeamTestimonials'
 import { aboutTestimonial } from '@constants'
 
 
@@ -14,7 +14,7 @@ const page = () => {
       <Who />
       <Choose />
       <Team />
-      <Clients testimonials={aboutTestimonial}/>
+      <TeamTestimonials/>
     </div>
   )
 }

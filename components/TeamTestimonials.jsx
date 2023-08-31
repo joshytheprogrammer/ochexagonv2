@@ -1,4 +1,8 @@
 "use client"
+
+import { useEffect, useState } from 'react';
+import { fetchTeamTestimonials } from '../firebase/utils';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -7,11 +11,27 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-const Clients = ({testimonials}) => {
+
+const TeamTestimonials = () => {
+
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+  async function fetchData() {
+    try {
+      const data = await fetchTeamTestimonials();
+      setTestimonials(data);
+    } catch (error) {
+
+    }
+  }
+  fetchData();
+}, []);
+
   return (
     <div className="lg:px-20 lg:py-20 md:px-16 px-8 pt-12">
 
-        <h1 className="font text-4xl md:text-[56px] font-semibold text-center lg:mb-12 md:mb-12 mb-6">Our Clients Say</h1>
+        <h1 className="font text-4xl md:text-[56px] font-semibold text-center lg:mb-12 md:mb-12 mb-6">Our Team Say</h1>
 
 
         <Swiper
@@ -34,12 +54,12 @@ const Clients = ({testimonials}) => {
               <div className='lg:pt-6 lg:pb-4 lg:px-5 mb-8 lg:mb-0 drop-shadow-2xl rounded-2xl w-auto relative'>
             
               <p className='sm:text-2xl font'>
-              {testimony.testimony}
+              {testimony.data.testimony}
               </p>
 
               
-              <h3 className="text-xl font-bold mt-4">{testimony.name}</h3>
-                <span className='font-semibold'>{testimony.location}</span>
+              <h3 className="text-xl font-bold mt-4">{testimony.data.name}</h3>
+                <span className='font-semibold'>{testimony.data.postHeld}</span>
               </div>
             </SwiperSlide>
           ))]
@@ -50,4 +70,4 @@ const Clients = ({testimonials}) => {
   )
 }
 
-export default Clients
+export default TeamTestimonials

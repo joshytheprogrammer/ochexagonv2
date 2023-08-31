@@ -11,6 +11,20 @@ export async function fetchTestimonials() {
     return testimonials;
   } catch (error) {
     console.error('Error fetching testimonials:', error);
-    throw error; // You can handle the error in the component using this thrown error
+    throw error;
+  }
+}
+
+export async function fetchTeamTestimonials() {
+  try {
+    const querySnapshot = await getDocs(collection(firestore, 'teamTestimonials'));
+    const testimonials = [];
+    querySnapshot.forEach((doc) => {
+      testimonials.push({ id: doc.id, data: doc.data() });
+    });
+    return testimonials;
+  } catch (error) {
+    console.error('Error fetching testimonials:', error);
+    throw error;
   }
 }

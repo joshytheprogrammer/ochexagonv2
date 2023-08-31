@@ -8,13 +8,13 @@ const Product = () => {
 
         <div className="flex flex-wrap justify-between md:flex-row items-center">
           {chemicalRange.map(product => (
-            <div className="w-full md:w-[30%] lg:w-[22%] background-accent rounded-xl my-6 py-6 flex flex-col justify-center items-center">
+            <div className="w-full md:w-[42%] lg:w-[28%] background-primary  cursor-pointer rounded-xl my-6 pb-12 border-2 flex flex-col justify-center items-center">
               <Image 
                src={product.icon}
                alt="prodcut icon"
-               className="w-[100px] h-[40px]"
+               className="w-full h-[200px] rounded-t-lg"
               />
-              <p className="font font-semibold mt-4 text-sm px-6">
+              <p className="font font-semibold mt-12 text-xl text-white px-6">
                 {product.productname}
               </p>
             </div>

@@ -5,7 +5,6 @@ import Product from '@components/Product'
 import Testimonials from '@components/Testimonials'
 import Cta from '@components/Cta'
 
-import { homeTestimonials } from '@constants'
 
 const page = () => {
   return (
@@ -14,7 +13,7 @@ const page = () => {
       <What />
       <Why />
       <Product />
-      <Testimonials testimonials={homeTestimonials}/>
+      <Testimonials/>
       <Cta />
     </div>
   )

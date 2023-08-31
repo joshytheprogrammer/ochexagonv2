@@ -1,13 +1,13 @@
 import testimonial1  from '@assets/testimonial1.png'
 import testimonial2  from '@assets/testimonial2.png'
 import testimonial3  from '@assets/testimonial3.png'
-import flask from '@assets/flask.svg'
 
-import aluminiumSulphate from '@assets/aluminiumSulphate.svg';
-import ferricChloride from '@assets/ferricChloride.svg';
-import causticSoda from '@assets/causticSoda.svg';
-import sodaAsh from '@assets/sodaAsh.svg';
-import sodiumHypochlorite from '@assets/sodiumHypochlorite.svg';
+
+import aluminiumSulphate from '@assets/aluminiumSulphate.png';
+import ferricChloride from '@assets/ferricChloride.jpg';
+import causticSoda from '@assets/causticSoda.jpg';
+import sodiumcarbonate from '@assets/sodiumCarbonate.jpg';
+import sodiumHypochlorite from '@assets/sodiumHypochlorite.jpg';
 
 
 
@@ -96,7 +96,7 @@ export const chemicalRange = [
     {
         id: "one",
         icon: aluminiumSulphate,
-        productname: "Alum (Aluminum Sulfate)",
+        productname: "Aluminum Sulfate",
     },
     {
         id: "two",
@@ -110,13 +110,29 @@ export const chemicalRange = [
     },
     {
         id: "four",
-        icon: sodaAsh,
-        productname: "Sodium Carbonate (Soda Ash)",
+        icon: sodiumcarbonate,
+        productname: "Sodium Carbonate",
     },
     {
         id: "seven",
         icon: causticSoda,
-        productname: "Caustic Soda (Sodium Hydroxide)",
+        productname: "Sodium Hydroxide",
+    },
+   
+    {
+        id: "four",
+        icon: sodiumcarbonate,
+        productname: "Sodium Carbonate",
+    },
+    {
+        id: "four",
+        icon: sodiumcarbonate,
+        productname: "Sodium Carbonate",
+    },
+    {
+        id: "seven",
+        icon: causticSoda,
+        productname: "Sodium Hydroxide",
     },
    
 ]
