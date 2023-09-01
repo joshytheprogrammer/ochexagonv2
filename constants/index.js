@@ -94,43 +94,43 @@ export const blogPostCard = [
 
 export const chemicalRange = [
     {
-        id: "one",
+        id: 1,
         icon: aluminiumSulphate,
         productname: "Aluminum Sulfate",
     },
     {
-        id: "two",
+        id: 2,
         icon: ferricChloride,
         productname: "Ferric Chloride",
     },
     {
-        id: "three",
+        id: 3,
         icon: sodiumHypochlorite,
         productname: "Sodium Hypochlorite",
     },
     {
-        id: "four",
+        id: 4,
         icon: sodiumcarbonate,
         productname: "Sodium Carbonate",
     },
     {
-        id: "seven",
+        id: 5,
         icon: causticSoda,
         productname: "Sodium Hydroxide",
     },
    
     {
-        id: "four",
+        id: 6,
         icon: sodiumcarbonate,
         productname: "Sodium Carbonate",
     },
     {
-        id: "four",
+        id: 7,
         icon: sodiumcarbonate,
         productname: "Sodium Carbonate",
     },
     {
-        id: "seven",
+        id: 8,
         icon: causticSoda,
         productname: "Sodium Hydroxide",
     },

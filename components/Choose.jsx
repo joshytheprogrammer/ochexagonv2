@@ -28,7 +28,7 @@ const Choose = () => {
 
         <div className="w-full md:w-[49%] lg:w-[32%] rounded-2xl lg:py-12 py-8 px-6 lg:mb-0 mb-16 flex flex-col items-center background-accent">
           <h2 className="font font-semibold text-xl md:text-2xl lg:text-3xl text-center my-3 xl:my-6">
-            Tailored Innovations
+            Customized Innovations
           </h2>
 
           <p className="font text-base lg:text-sm xl:text-lg text-center">

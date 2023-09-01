@@ -35,7 +35,7 @@ const Footer = () => {
               className='w-6 mr-4 hidden lg:block'
             />
 
-            <p className='font max-w-[300px]'>
+            <p className='font max-w-[250px]'>
               417, Apapa/Oshodi Expressway by Iyana Itire Ilasamaja Lagos.
             </p>              
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
               className='w-6 mr-4 hidden lg:block'
             />
 
-            <p className='font w-[300px]'>
+            <p className='font w-[250px]'>
               +234-803-0512-882
             </p>              
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
               alt='mail'
               className='w-6 mr-4 hidden lg:block'
             />
-            <p className='font w-[300px]'>
+            <p className='font w-[250px]'>
               info@ochexagon.com
             </p>              
           </div>
@@ -73,7 +73,7 @@ const Footer = () => {
           <Link href='/blog' className="hover:text-blue-800 my-2">
             Blog
           </Link>
-          <Link href='contact' className="hover:text-blue-800 my-2">
+          <Link href='contact' className="hover:text-blue-800 mt-2">
             Contact us
           </Link>
         </div>

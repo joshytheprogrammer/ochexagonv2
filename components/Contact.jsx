@@ -87,7 +87,7 @@ const Contact = () => {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="lg:w-3/5 w-full">
-      <h2 className='font sm:text-5xl text-4xl font-semibold mb-8 lg:mb-16'>Send us a message</h2>
+      <h2 className='font sm:text-5xl text-3xl font-semibold mb-8 lg:mb-16'>Send us a message</h2>
         <Input
           id="Username"
           label="Username"
