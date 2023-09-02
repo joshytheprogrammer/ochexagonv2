@@ -29,25 +29,23 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     try {
-      // Rename the 'name' field to 'Name'
+
+      const currentDate = new Date();
+
       const modifiedData = {
         ...data,
-        Name: data.name, // Rename the 'name' field
+        senderName: data.name, 
+
+        isRead: false,
+
+        timestamp: currentDate, 
       };
 
-      // Remove the original 'name' field
       delete modifiedData.name;
 
-      // Rename the 'email' field to 'Email'
-      modifiedData["Email"] = modifiedData.email; // Rename the 'email' field
 
-      // Remove the original 'email' field
-      delete modifiedData.email;
+      modifiedData["messageSent"] = modifiedData.message;
 
-      // Rename the 'message' field to 'Message Sent'
-      modifiedData["Message Sent"] = modifiedData.message; // Rename the 'message' field
-
-      // Remove the original 'message' field
       delete modifiedData.message;
 
       // Send the modified form data to Firestore

@@ -27,4 +27,18 @@ export async function fetchTeamTestimonials() {
     console.error('Error fetching testimonials:', error);
     throw error;
   }
+
+}
+export async function fetchProducts() {
+  try {
+    const querySnapshot = await getDocs(collection(firestore, 'products'));
+    const products = [];
+    querySnapshot.forEach((doc) => {
+      products.push({ id: doc.id, data: doc.data() });
+    });
+    return products;
+  } catch (error) {
+    console.error('Error fetching testimonials:', error);
+    throw error;
+  }
 }

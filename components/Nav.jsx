@@ -52,6 +52,9 @@ const Nav = () => {
         <Link href='/about' className={`ml-6 py-1 px-3 relative hover:border-blue-800 hover:border-b-[2.5px] hover:text-blue-900  transition duration-500 ${pathname == "/about" ? "border-blue-800 border-b-[2.5px]" : ""}`}>
           About
         </Link>
+        <Link href='/products' className={`ml-6 py-1 px-3 relative hover:border-blue-800 hover:border-b-[2.5px] hover:text-blue-900  transition duration-500 ${pathname == "/about" ? "border-blue-800 border-b-[2.5px]" : ""}`}>
+          Products
+        </Link>
         <Link href='/blog' className={`ml-6 py-1 px-3 relative hover:border-blue-800 hover:border-b-[2.5px] hover:text-blue-900  transition duration-500 ${pathname == "/blog" ? "border-blue-800 border-b-[2.5px]" : ""}`}>
           Blog
         </Link>
@@ -79,6 +82,9 @@ const Nav = () => {
           </Link>
           <Link href='/about' className="py-3 my-1 w-full text-center">
             About
+          </Link>
+          <Link href='/products' className="py-3 my-1 w-full text-center">
+           Products
           </Link>
           <Link href='/blog' className="py-3 my-1 w-full text-center">
             Blog
