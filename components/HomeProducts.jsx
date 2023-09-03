@@ -55,12 +55,6 @@ const Product = () => {
           </div>
         ))}
       </div>
-
-      <Link href="/products" className="flex justify-center">
-        <button className="full lg:w-2/4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white text-xl font-medium rounded-md px-4 py-4">
-          View Product Details
-        </button>
-      </Link>
     </div>
   );
 };

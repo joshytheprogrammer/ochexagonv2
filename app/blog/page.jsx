@@ -26,10 +26,7 @@ const page = () => {
                 <h2 className="font font-bold text-2xl my-2">{post.title}</h2>
 
                 <p className="font text-sm sm:ext-md h-[100px] overflow-hidden">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam, at ab temporibus provident ratione error iste amet
-                  reiciendis placeat atque eum, facilis, obcaecati doloribus
-                  aperiam delectus in sint laboriosam inventore.
+                  {post.intro}
                 </p>
 
                 <Link href={`/blog/posts/${post.id}`}>

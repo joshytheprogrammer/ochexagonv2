@@ -69,29 +69,30 @@ const Page = ({ params }) => {
 
   // Conditionally render the product details when 'product' is not null
   return (
-    <div className="lg:px-24 md:px-16 px-8 py-16 flex flex-col xl:flex-row justify-center">
+    <div className="lg:px-24 md:px-16 px-8 py-12 flex flex-col xl:flex-row justify-center">
       {product ? (
         <>
           <div className="w-full xl:w-[400px] border-2 mb-8 rounded-xl flex item">
-            <Image
+          <Image
               src={product.url}
               width={100}
               height={100}
-              className="w-full h-[250px] md:h-[500px] xl:h-auto rounded-xl"
+              alt="product icon"
+              className="w-full max-h-80 object-contain rounded-t-lg"
             />
           </div>
 
           <div className="ml-0 xl:ml-12 xl:max-w-[700px] flex flex-col justify-center">
-            <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
+            <h1 className="text-3xl font-bold mb-6">{product.name}</h1>
 
             <h2 className="text-2xl font-semibold">Product Description</h2>
-            <p className="mb-2">{product.description}</p>
+            <p className="mb-5">{product.description}</p>
 
             <h2 className="text-2xl font-semibold">Packaging</h2>
-            <p className="mb-2">{product.packaging} </p>
+            <p className="mb-5">{product.packaging} </p>
 
             <h2 className="text-2xl font-semibold">Storage</h2>
-            <p className="mb-2">{product.storage}</p>
+            <p className="mb-5">{product.storage}</p>
 
             <h2 className="text-2xl font-semibold">Key Applications</h2>
             <p>{product.applications}</p>

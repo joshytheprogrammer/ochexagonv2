@@ -1,7 +1,13 @@
+"use client"
+import { useEffect } from 'react';
 import '@styles/globals.css';
 import Topnav from '@components/TopNav'
 import Nav from '@components/Nav'
 import Footer from '@components/Footer'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 
@@ -13,6 +19,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  }, []);
+
   return (
     <html lang="en">
       <body>
