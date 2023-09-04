@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { firestore } from "../../../../firebase/firebase";
+import { firestore } from "../../../firebase/firebase";
 import { doc, getDoc } from "firebase/firestore";
 import Image from "next/image"; // Import the Image component
 
@@ -33,7 +33,7 @@ const Page = ({ params }) => {
     <div className="lg:px-24 md:px-16 px-8 py-12 flex flex-col xl:flex-row justify-center">
       {product ? (
         <>
-          <div className="w-full xl:w-[400px] border-2 mb-8 rounded-xl flex item">
+          <div className="w-full xl:w-[400px] border-2 mb-8 rounded-xl flex items-center">
           <Image
               src={product.url}
               width={100}

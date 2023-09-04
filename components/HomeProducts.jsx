@@ -47,7 +47,7 @@ const Product = () => {
               <p className="font-semibold text-xl text-center mb-4">
                 {product.data.name}
               </p>
-              <Link href={`products/productDescription/${product.id}`}>
+              <Link href={`products/${product.id}`}>
                 <button className="w-full bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white text-base font-medium rounded-md px-4 py-2">
                   See More
                 </button>
