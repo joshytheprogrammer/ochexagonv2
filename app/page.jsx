@@ -1,5 +1,5 @@
-"use client"
-import { useEffect } from 'react';
+// "use client"
+// import { useEffect } from 'react';
 import Hero from '@components/Hero'
 import What from '@components/What'
 import Why from '@components/Why'
@@ -12,11 +12,11 @@ import 'aos/dist/aos.css';
 
 const page = () => {
 
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 500,
+  //   });
+  // }, []);
 
   return (
     <div>
