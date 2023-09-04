@@ -1,10 +1,22 @@
+"use client"
+import { useEffect } from 'react';
 import Jumbotron from "@components/Jumbotron";
 import Image from "next/image";
 import blog1 from "@assets/blog1.jpg";
 import { blogPostCard } from "@constants";
 import Link from "next/link";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const page = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  }, []);
+
   return (
     <div className="">
       <Jumbotron
@@ -12,7 +24,7 @@ const page = () => {
         url="https://res.cloudinary.com/dsgvwxygr/image/upload/v1693116985/ochexagon/photo_1_2023-08-27_07-07-22_o5zhe4.jpg"
       />
 
-      <div className="flex justify-between flex-wrap lg:p-24 md:px-16 md:pt-20 md:pb-0 px-8 py-12">
+      <div className="flex justify-between flex-wrap lg:p-24 md:px-16 md:pt-20 md:pb-0 px-8 py-12" data-aos="zoom-in">
         {[
           blogPostCard.map((post) => (
             <div className="w-full md:w-[49%] lg:w-[32%] mb-12 border border-black rounded-xl">

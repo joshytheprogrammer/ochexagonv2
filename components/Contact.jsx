@@ -67,7 +67,7 @@ const Contact = () => {
 
   return (
     <div className="lg:px-24 lg:pt-20 md:px-16 md px-8 py-12 flex lg:flex-row  justify-between flex-col">
-      <div className="lg:w-2/5 w-full mr-12 mb-20">
+      <div className="lg:w-2/5 w-full mr-12 mb-20" data-aos="fade-right">
         <p className="font text-lg">
           If you have any questions or comments, please contact us via email, or
           send us a message using the contact form.
@@ -84,7 +84,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="lg:w-3/5 w-full">
+      <form onSubmit={handleSubmit(onSubmit)} className="lg:w-3/5 w-full" data-aos="fade-left">
       <h2 className='font sm:text-5xl text-3xl font-semibold mb-8 lg:mb-16'>Send us a message</h2>
         <Input
           id="Username"

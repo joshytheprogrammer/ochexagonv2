@@ -3,7 +3,7 @@ import founder from '@assets/founder.jpg'
 
 const Team = () => {
   return (
-    <div className="lg:px-20 lg:py-12 md:px-16 px-8 pt-12">
+    <div className="lg:px-20 lg:py-12 md:px-16 px-8 pt-12" data-aos="zoom-in">
       <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-24 mb-16">Our Executive Team</h1>
 
       <div className="flex flex-col md:flex-row items-center lg:justify-between">

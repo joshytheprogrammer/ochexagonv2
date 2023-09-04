@@ -1,6 +1,6 @@
 const Choose = () => {
   return (
-    <div className="lg:px-20 lg:py-24 md:px-16 px-8 pt-12">
+    <div className="lg:px-20 lg:py-24 md:px-16 px-8 pt-12" data-aos="zoom-in">
       <h1 className="font text-4xl md:text-[56px] font-semibold text-center md:mb-12 mb-6">
         Why Choose Us
       </h1>
