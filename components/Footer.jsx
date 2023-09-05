@@ -54,7 +54,7 @@ const Footer = () => {
             <Image 
               src={mail}
               alt='mail'
-              className='w-6 mr-4 hidden lg:block'
+              className='w-6 h-auto mr-4 hidden lg:block'
             />
             <p className='font w-[250px]'>
               info@ochexagon.com
@@ -87,21 +87,29 @@ const Footer = () => {
           <Image 
             src={instagram}
             alt='instagram'
+            width={100}
+            height={100}
             className='w-auto h-auto mx-2'
           />
           <Image 
             src={twitter}
             alt='twitter'
+            width={100}
+            height={100}
             className='w-auto h-auto mx-2'
           />
           <Image 
             src={facebook}
             alt='facebook'
+            width={100}
+            height={100}
             className='w-auto h-auto mx-2'
           />
           <Image 
             src={linkedin}
             alt='linkedin'
+            width={100}
+            height={100}
             className='w-auto h-auto mx-2'
           />
         </div>

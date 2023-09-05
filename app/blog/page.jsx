@@ -1,9 +1,11 @@
 "use client"
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Jumbotron from "@components/Jumbotron";
 import Image from "next/image";
-import blog1 from "@assets/blog1.jpg";
-import { blogPostCard } from "@constants";
+
+
+import { fetchBlog } from '../../firebase/utils';
+
 import Link from "next/link";
 
 import AOS from 'aos';
@@ -17,6 +19,21 @@ const page = () => {
     });
   }, []);
 
+  const [blog, setBlog] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await fetchBlog();
+        setBlog(data);
+      } catch (error) {
+
+      }
+    }
+    fetchData();
+  }, []);
+
+
   return (
     <div className="">
       <Jumbotron
@@ -26,19 +43,21 @@ const page = () => {
 
       <div className="flex justify-between flex-wrap lg:p-24 md:px-16 md:pt-20 md:pb-0 px-8 py-12" data-aos="zoom-in">
         {[
-          blogPostCard.map((post) => (
-            <div className="w-full md:w-[49%] lg:w-[32%] mb-12 border border-black rounded-xl">
+          blog.map((post) => (
+            <div className="w-full md:w-[49%] lg:w-[32%] mb-12 border border-black rounded-xl" key={post.data.title}>
               <Image
-                src={blog1}
+                src={post.data.coverImage}
                 alt="Image"
-                className="w-full h-auto rounded-t-xl"
+                className="w-full h-[250px] rounded-t-xl"
+                width={80}
+                height={80}
               />
 
               <div className="p-4">
-                <h2 className="font font-bold text-2xl my-2">{post.title}</h2>
+                <h2 className="font font-bold text-2xl my-2">{post.data.title}</h2>
 
                 <p className="font text-sm sm:ext-md h-[100px] overflow-hidden">
-                  {post.intro}
+                  {post.data.content}
                 </p>
 
                 <Link href={`/blog/posts/${post.id}`}>

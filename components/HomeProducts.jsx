@@ -21,7 +21,7 @@ const Product = () => {
     fetchData();
   }, []);
 
-  const homeDisplay = products.slice(0, 4);
+
 
   return (
 <div data-aos="zoom-in">
@@ -31,7 +31,7 @@ const Product = () => {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-        {homeDisplay.map((product) => (
+        {products.map((product) => (
           <div
             key={product.id}
             className="w-full cursor-pointer rounded-xl my-6 border-2"
@@ -62,3 +62,4 @@ const Product = () => {
 };
 
 export default Product;
+
