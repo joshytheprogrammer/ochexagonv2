@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="background-primary text-secondary flex justify-between md:px-16 py-6 ">
-        <div className='text-sm sm:text-base text-center md:text-left'>
+        <div className='text-sm sm:text-base text-center md:text-left mx-auto md:mx-0'>
           <p className="mb-3 sm:mb-0">Copyright &copy; 2023 <span className='font-semibold'>ochexagon</span>. All rights reserved </p>
           <p>this website was built by <Link href="https://github.com/RalphFred" target="_blank" className="font-bold cursor-pointer">raphaelKwaghuter</Link> and <Link href="https://joshytheprogrammer.com/" target="_blank" className="font-bold cursor-pointer">joshytheprogrammer</Link></p>
         </div>

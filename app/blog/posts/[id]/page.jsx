@@ -23,6 +23,10 @@ const page = ({ params }) => {
   const id = String(params.id);
   const post = blog.find((postCard) => postCard.id === id);
 
+  if (!post) {
+    return <p>Loading posts...</p>;
+  }
+
   return (
     <div className="py-12">
       {post ? (
@@ -61,13 +65,12 @@ const page = ({ params }) => {
               </div>
 
               <div>
-                <p className="text-xl font">{post.data.content}</p>
+                <p className="text-xl font text-center">{post.data.content}</p>
               </div>
             </div>
           </div>
         </>
       ) : (
-        // Render a loading message or handle the case where the post is not found
         <p>Loading...</p>
       )}
     </div>
