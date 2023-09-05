@@ -66,17 +66,4 @@ const Page = ({ params }) => {
   );
 };
 
-// -----------------------------------Server Error ---------------------------------
-
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const productDocRef = doc(firestore, "products", params.id);
-
-  const res = await fetch(productDocRef)
-  const data = await res.json()
- 
-  // Pass data to the page via props
-  return { props: { data } }
-}
-
 export default Page;
