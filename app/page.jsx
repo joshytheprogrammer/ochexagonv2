@@ -1,20 +1,30 @@
+"use client"
+import { useEffect } from 'react';
 import Hero from '@components/Hero'
 import What from '@components/What'
 import Why from '@components/Why'
-import Product from '@components/Product'
+import HomeProducts from '@components/HomeProducts'
 import Testimonials from '@components/Testimonials'
 import Cta from '@components/Cta'
 
-import { homeTestimonials } from '@constants'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const page = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  }, []);
+
   return (
     <div>
       <Hero />
       <What />
       <Why />
-      <Product />
-      <Testimonials testimonials={homeTestimonials}/>
+      <HomeProducts />
+      <Testimonials/>
       <Cta />
     </div>
   )

@@ -39,7 +39,7 @@ const Nav = () => {
         alt="Logo"
         className="mr-2 sm:w-[90px] w-[50px] h-auto" 
         />
-        <span className="text-[1.25rem] font-black font text-primary sm:block hidden">OCHEXAGON</span>
+        <span className="text-[1.25rem] font-black font text-primary xl:block hidden">OCHEXAGON</span>
       </Link>
 
     {/* -----------------------Desktop Links---------------------------- */}

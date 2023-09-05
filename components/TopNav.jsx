@@ -8,23 +8,23 @@ const Topnav = () => {
       <p>
         <span className="font-semibold mr-2">Opening Hours:</span>Monday to Friday - 8am to 5pm
       </p>
-      <p className="hidden lg:flex">
+      <p className="hidden lg:flex items-center">
         <Image 
          src={phoneW}
          alt="phone"
          width={20}
          height={20}
-         className="mr-3"
+         className="mr-3 w-8 h-auto"
         />
         +234-803-0512-882
       </p>
-      <p className="hidden lg:flex">
+      <p className="hidden lg:flex items-center">
         <Image 
           src={mailW}
           alt="mail"
           width={20}
           height={20}
-          className="mr-3 hidden lg:flex"
+          className="mr-3 hidden lg:flex w-8 h-auto"
           />
           info@ochexagon.com
       </p>
