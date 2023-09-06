@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="text-sm sm:text-base text-center md:text-left mx-auto md:mx-0">
           <p className="mb-3 sm:mb-0">
             Copyright &copy; 2023{" "}
-            <span className="font-semibold">ochexagon</span>. All rights
+            <span className="font-semibold">o.C HEXAGON</span>. All rights
             reserved{" "}
           </p>
           <p>
