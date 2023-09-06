@@ -16,7 +16,7 @@ const Topnav = () => {
          height={20}
          className="mr-3 w-8 h-auto"
         />
-        +234-803-0512-882
+        <a href="tel:+2348030512882">+234-803-0512-882</a>
       </p>
       <p className="hidden lg:flex items-center">
         <Image 
@@ -26,7 +26,7 @@ const Topnav = () => {
           height={20}
           className="mr-3 hidden lg:flex w-8 h-auto"
           />
-          info@ochexagon.com
+          <a href="mailto:info@ochexagon.com">info@ochexagon.com</a>
       </p>
     </div>
   )
