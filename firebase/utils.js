@@ -60,24 +60,6 @@ export async function fetchProducts() {
   }
 }
 
-export async function fetchProductById(productId) {
-  try {
-    const productDoc = doc(firestore, "products", productId);
-    const productSnapshot = await getDoc(productDoc);
-
-    if (productSnapshot.exists()) {
-      const productData = { id: productSnapshot.id, data: productSnapshot.data() };
-      return productData;
-    } else {
-      console.error("Product not found.");
-      return null;
-    }
-  } catch (error) {
-    console.error("Error fetching product by ID:", error);
-    throw error;
-  }
-}
-
 
 
 
