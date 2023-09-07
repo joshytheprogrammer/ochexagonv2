@@ -18,7 +18,7 @@ const What = () => {
             </div>
 
             <h2 className="font font-semibold text-xl md:text-2xl lg:text-2xl xl:text-32l text-center my-3 xl:my-6">
-              Clemical Solutions
+              Chemical Solutions
             </h2>
 
             <p className="font  lg:font-xl xl:text-lg text-center">
