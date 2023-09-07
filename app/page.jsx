@@ -4,6 +4,7 @@ import Hero from '@components/Hero'
 import What from '@components/What'
 import Why from '@components/Why'
 import HomeProducts from '@components/HomeProducts'
+import OtherProducts from '@components/OtherProducts';
 import Testimonials from '@components/Testimonials'
 import Cta from '@components/Cta'
 
@@ -24,6 +25,7 @@ const page = () => {
       <What />
       <Why />
       <HomeProducts />
+      <OtherProducts />
       <Testimonials/>
       <Cta />
     </div>

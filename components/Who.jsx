@@ -4,7 +4,7 @@ import chemicals from "@assets/chemicals.png";
 const Who = () => {
   return (
     <div className="lg:px-28 lg:pt-24 md:px-16 md:py-16 px-8 pt-12 flex flex-col lg:flex-row justify-between items-center">
-      <div className="mt-8 lg:mt-0 text-left" data-aos="zoom-in">
+      <div className="mt-8 lg:mt-0 text-center lg:text-left" data-aos="zoom-in">
         <div className="font text-xl">
           <p className="mb-5">
             <span className="font-bold">O. C HEXAGON NIGERIA LIMITED</span> was
