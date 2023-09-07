@@ -18,7 +18,7 @@ const Who = () => {
           <p className="mb-5">
             Our office is located at{" "}
             <span className="font-bold">
-              417 Apapa/Oshodi Expressway, by Iyana Itire, Ilasamaja, Lagos
+            76, Akanro Street, Off Oshodi Express Way, Ilasamaja, Mushin Lagos
             </span>
             . It comprises an office apartment and a warehouse. We have been
             involved in chemical and allied products since 1993.
