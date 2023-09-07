@@ -24,7 +24,7 @@ const page = ({ params }) => {
   const post = blog.find((postCard) => postCard.id === id);
 
   if (!post) {
-    return <p>Loading posts...</p>;
+    return <p></p>;
   }
 
   return (

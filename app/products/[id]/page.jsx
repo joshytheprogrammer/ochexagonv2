@@ -20,7 +20,7 @@ const page = ({ params }) => {
   const chemicalItem = product.find((chemical) => chemical.id === id);
 
   if(!chemicalItem) {
-    return <p>Loading posts...</p>;
+    return <p>.</p>;
   }
 
   return (

@@ -74,13 +74,13 @@ const Contact = () => {
         </p>
 
         <div>
-          <h2 className="font text-2xl font-medium pt-8">Email</h2>
-          <span className="font text-lg">info@ochexagon.com</span>
+          <h2 className="font text-2xl font-semibold pt-8 ">Email</h2>
+          <span className="font text-lg"><a href="mailto:info@ochexagon.com">info@ochexagon.com</a></span>
         </div>
 
         <div>
-          <h2 className="font text-2xl font-medium pt-8">Phone No</h2>
-          <span className="font text-lg">+234-803-0512-882</span>
+          <h2 className="font text-2xl font-semibold pt-8">Phone No</h2>
+          <span className="font text-lg"><a href="tel:+2348030512882">+234-803-0512-882</a></span>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
       <h2 className='font sm:text-5xl text-3xl font-semibold mb-8 lg:mb-16'>Send us a message</h2>
         <Input
           id="Username"
-          label="Username"
+          label="Full Name"
           type="text"
           register={{ ...register("name") }}
           errorMessage={errors.name?.message}

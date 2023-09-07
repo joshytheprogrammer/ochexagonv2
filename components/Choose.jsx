@@ -7,7 +7,7 @@ const Choose = () => {
 
       <div className="flex justify-center">
         <p className="font text-xl text-center  mb-12 w-full lg:w-[600px]">
-          Uncover the <span className="font-bold text-primary">OCHEXAGON</span>{" "}
+          Uncover the <span className="font-bold text-primary">O.C HEXAGON</span>{" "}
           difference. Experience excellence, innovation, and sustainability at
           its best.
         </p>
