@@ -37,7 +37,7 @@ const Nav = () => {
         <Image
         src={logo}
         alt="Logo"
-        className="mr-2 sm:w-[120px] w-[60px] h-auto" 
+        className="mr-2 sm:w-[120px] w-[80px] h-auto" 
         />
         <span className="text-3xl font-black font text-primary xl:block hidden">O.C HEXAGON</span>
       </Link>
