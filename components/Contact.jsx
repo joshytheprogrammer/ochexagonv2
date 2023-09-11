@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -7,6 +9,8 @@ import { collection, addDoc } from "firebase/firestore";
 import { firestore } from "../firebase/firebase";
 
 import Input from "@components/Input";
+import tick from '@assets/tick.svg'
+import Image from "next/image";
 
 const schema = yup.object({
   name: yup.string().required("Name is a required field"),
@@ -18,6 +22,17 @@ const schema = yup.object({
 });
 
 const Contact = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const openModal = () => {
+    setIsOpenModal(true);
+  };
+
+  const closeModal = () => {
+    setIsOpenModal(false);
+  };
+
+
   const {
     register,
     handleSubmit,
@@ -29,20 +44,18 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     try {
-
       const currentDate = new Date();
 
       const modifiedData = {
         ...data,
-        senderName: data.name, 
+        senderName: data.name,
 
         isRead: false,
 
-        timestamp: currentDate, 
+        timestamp: currentDate,
       };
 
       delete modifiedData.name;
-
 
       modifiedData["messageSent"] = modifiedData.message;
 
@@ -58,6 +71,7 @@ const Contact = () => {
       // Clear the form fields
       reset();
 
+      openModal();
       // Optionally, provide user feedback (e.g., show a success message)
     } catch (error) {
       console.error("Error sending message and saving to Firestore:", error);
@@ -75,17 +89,27 @@ const Contact = () => {
 
         <div>
           <h2 className="font text-2xl font-semibold pt-8 ">Email</h2>
-          <span className="font text-lg"><a href="mailto:info@ochexagon.com">info@ochexagon.com</a></span>
+          <span className="font text-lg">
+            <a href="mailto:info@ochexagon.com">info@ochexagon.com</a>
+          </span>
         </div>
 
         <div>
           <h2 className="font text-2xl font-semibold pt-8">Phone No</h2>
-          <span className="font text-lg"><a href="tel:+2348030512882">+234-803-0512-882</a></span>
+          <span className="font text-lg">
+            <a href="tel:+2348030512882">+234-803-0512-882</a>
+          </span>
         </div>
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="lg:w-3/5 w-full" data-aos="fade-left">
-      <h2 className='font sm:text-5xl text-3xl font-semibold mb-8 lg:mb-16'>Send us a message</h2>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="lg:w-3/5 w-full"
+        data-aos="fade-left"
+      >
+        <h2 className="font sm:text-5xl text-3xl font-semibold mb-8 lg:mb-16">
+          Send us a message
+        </h2>
         <Input
           id="Username"
           label="Full Name"
@@ -118,6 +142,26 @@ const Contact = () => {
           className="block font text-xl w-full text-center p-3 background-primary cursor-pointer text-secondary rounded-xl"
         />
       </form>
+
+      {isOpenModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 background-transparent" onClick={closeModal} data-aos="zoom-in">
+          <div className="bg-white p-12 rounded-lg shadow-lg font lg:max-w-[600px] flex flex-col items-center">
+            <div className="background-primary flex items-center justify-center w-[80px] h-[80px] rounded-full">
+              <Image 
+               src={tick}
+               width={40}
+              />
+            </div>
+            <h2 className="text-2xl font-semibold my-6 text-center">
+              Your message has been successfully submitted. We'll get back to
+              you as soon as possible.
+            </h2>
+            <button className="block mt-4 p-2 background-primary text-white rounded-lg cursor-pointer w-full"  onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
