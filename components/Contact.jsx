@@ -145,14 +145,14 @@ const Contact = () => {
 
       {isOpenModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 background-transparent" onClick={closeModal} data-aos="zoom-in">
-          <div className="bg-white p-12 rounded-lg shadow-lg font lg:max-w-[600px] flex flex-col items-center">
+          <div className="bg-white px-4 py-8 lg:p-12 rounded-lg shadow-lg font w-[300px]  lg:w-[600px] flex flex-col items-center">
             <div className="background-primary flex items-center justify-center w-[80px] h-[80px] rounded-full">
               <Image 
                src={tick}
                width={40}
               />
             </div>
-            <h2 className="text-2xl font-semibold my-6 text-center">
+            <h2 className="lg:text-2xl font-semibold my-2 lg:my-6 text-center">
               Your message has been successfully submitted. We'll get back to
               you as soon as possible.
             </h2>
