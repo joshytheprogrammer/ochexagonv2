@@ -33,11 +33,11 @@ const OtherProducts = () => {
         </div>
 
         <div className="w-full md:w-[32%] lg:w-[24%] h-[150px] rounded-2xl px-4 lg:mb-5 mb-8 flex flex-col items-center justify-center background-primary  text-center font-bold text-white text-xl">
-          SODIUM HYDROXIDE SOLTION (HEX-30)
+          SODIUM HYDROXIDE SOLUTION (HEX-30)
         </div>
 
         <div className="w-full md:w-[32%] lg:w-[24%] h-[150px] rounded-2xl px-4 lg:mb-5 mb-8 flex flex-col items-center justify-center background-primary  text-center font-bold text-white text-xl">
-          SODIUM HYDROXIDE SOLTION (HEX-50)
+          SODIUM HYDROXIDE SOLUTION (HEX-50)
         </div>
 
         <div className="w-full md:w-[32%] lg:w-[24%] h-[150px] rounded-2xl px-4 lg:mb-5 mb-8 flex flex-col items-center justify-center background-primary  text-center font-bold text-white text-xl">

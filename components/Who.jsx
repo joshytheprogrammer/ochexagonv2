@@ -7,11 +7,11 @@ const Who = () => {
       <div className="mt-8 lg:mt-0 text-center lg:text-left" data-aos="zoom-in">
         <div className="font text-xl">
           <p className="mb-5">
-            <span className="font-bold">O. C HEXAGON NIGERIA LIMITED</span> was
+            <span className="font-bold">O.C HEXAGON NIGERIA LIMITED</span> was
             incorporated in 1995 for the purpose of importing, marketing, and
             processing industrial chemicals, equipment, and laboratory items. It
             is an offshoot of the parent company,{" "}
-            <span className="font-bold">HEXAGON MARKING COMPANY</span>, which
+            <span className="font-bold">HEXAGON MARKETING COMPANY</span>, which
             was registered in 1989.
           </p>
 
@@ -20,7 +20,7 @@ const Who = () => {
             <span className="font-bold">
             76, Akanro Street, Off Oshodi Express Way, Ilasamaja, Mushin Lagos
             </span>
-            . It comprises an office apartment and a warehouse. We have been
+            . It comprises of an office apartment and a warehouse. We have been
             involved in chemical and allied products since 1993.
           </p>
 
@@ -29,7 +29,7 @@ const Who = () => {
             <span className="font-bold">
               No. 12 Kolawole Shonibare Street, Ajao Estate, Lagos
             </span>
-            . It comprises a factory and warehouses.
+            . It comprises of a factory and warehouses.
           </p>
 
           <p className="mb-5">
@@ -52,10 +52,7 @@ const Who = () => {
             We also have <span className="font-bold">Mrs. Stella Onyeje</span>{" "}
             as a Director. She holds a B.Sc in Microbiology from the University
             of Nigeria Nsukka and a Masters Degree in Environmental Management
-            (MEM) from the University of Lagos. We have a permanent staff of
-            eleven (11) workers, spanning Secretarial, Technical, HSE, Analysts,
-            Sales, Delivery, and Administrative staff, as well as numerous
-            casual workers.
+            (MEM) from the University of Lagos.
           </p>
 
           <p className="mb-5">
@@ -65,7 +62,7 @@ const Who = () => {
 
           <p className="mb-5">
             <span className="font-bold">
-              SODIUM HYPOCHLORITE SOLUTION (HEC-15 brand):
+              SODIUM HYPOCHLORITE SOLUTION (15Hex brand):
             </span>{" "}
             Packaged in 200-liter reinforced plastic drums, which has been in
             use at NLNG since 1999, Nigeria Breweries plants all over Nigeria,
@@ -96,21 +93,12 @@ const Who = () => {
             Used for clearing oil spillages on water and on grounds.
           </p>
 
-          <p className="mb-5">
-            Our current annual turnover is approximately nine hundred and fifty
-            million naira (₦950,000,000). Currently, we supply chemicals to
+          <p className="mb-5">Currently, we supply chemicals to
             SPDC, SNEPCO, Nigeria Breweries plants in Lagos, Kaduna, Ibadan,
             Ama-Enugu, Aba, Intafact Beverages Ltd (a subsidiary of SABMiller)
             in Onitsha, Seven-up Bottling Company Plc, Kam Industries Ltd. in
             Ilorin, Nigeria Liquefied Natural Gas (NLNG) in Bonny, and many oil
             servicing companies.
-          </p>
-
-          <p className="mb-5">
-            Our bankers are Diamond Bank Nig. Plc., 58 Lawanson Road, Lagos;
-            Zenith Bank Plc., 133 Ladipo Street, Matori, Lagos; FCMB Plc., 117
-            Okota Road, Okota, Lagos; and Keystone Bank Plc., Ajose Adegun
-            branch, Lagos.
           </p>
 
           <p className="">
