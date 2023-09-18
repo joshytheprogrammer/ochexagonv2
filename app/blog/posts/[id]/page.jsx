@@ -37,7 +37,7 @@ const page = ({ params }) => {
               width={100}
               height={100}
               alt="blog Image"
-              className="w-full h-[200px] lg:h-[350px]"
+              className="w-full h-[200px] lg:h-[400px]"
             />
 
             <div className="py-12">
