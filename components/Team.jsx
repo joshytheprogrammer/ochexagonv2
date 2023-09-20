@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import founder from '@assets/founder.jpg'
-import founder2 from '@assets/founder2.png'
-import founder3 from '@assets/founder3.png'
-import founder4 from '@assets/founder4.png'
+import founder2 from '@assets/founder2.jpg'
+import founder3 from '@assets/founder3.jpg'
+import founder4 from '@assets/founder4.jpg'
 
 const Team = () => {
   return (
@@ -32,7 +32,7 @@ const Team = () => {
         </div>
         <div className="w-full lg:w-[350px] mb-12 lg:mb-0 mx-3">
           <Image 
-           src={founder4}
+           src={founder3}
            alt='founder image'
            className='w-full h-[340px] border-2 rounded-xl'
           />
@@ -43,7 +43,7 @@ const Team = () => {
 
         <div className="w-full lg:w-[350px] mb-12 lg:mb-0 mx-3">
           <Image 
-           src={founder3}
+           src={founder4}
            alt='founder image'
            className='w-full h-[340px] border-2 rounded-xl'
           />

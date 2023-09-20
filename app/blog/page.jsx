@@ -49,8 +49,8 @@ const page = () => {
                 src={post.data.coverImage}
                 alt="Image"
                 className="w-full h-[250px] rounded-t-xl"
-                width={80}
-                height={80}
+                width={500}
+                height={500}
               />
 
               <div className="p-4">

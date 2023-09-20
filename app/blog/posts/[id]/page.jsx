@@ -34,10 +34,10 @@ const page = ({ params }) => {
           <div className="lg:px-24 md:px-16 px-8 pb-8 ">
             <Image
               src={post.data.coverImage}
-              width={100}
-              height={100}
+              width={3000}
+              height={3000}
               alt="blog Image"
-              className="w-full h-[200px] lg:h-[350px]"
+              className="w-full h-[200px] lg:h-[450px]"
             />
 
             <div className="py-12">
